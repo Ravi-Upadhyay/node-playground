@@ -1,0 +1,9 @@
+{
+    "name": "dice-game",
+    "version": "0.0.1",
+    "license": "UNLICENSED",
+    "private": true,
+    "description": "A first node application - dice game",
+    "scripts": {},
+    "dependencies": {}
+}
