@@ -58,6 +58,13 @@ ___
 - The `Event loop` is continously checking if there is any new for node.js to do. Tasks can create new tasks in the queue. Many tasks are designed in such a way that it never ends (i.e. background workers).
 - `Non-blocking` tasks get added to todo list and node can process them whenever it can.
 - `Blocking` tasks are tasks where sequence is needed, They need one thread completly to execute.
+- Servers generally tend to be multi-threaded. 
+- Node is single threaded, Node effectively uses scheduling to do mutiple tasks.
+    1. It reads the input
+    2. It performs some task
+    3. If something is asynchronous (sub-task), it put that task/sub-task into its todo list
+    4. Then picks another available task
+- 
 
 ---
 
