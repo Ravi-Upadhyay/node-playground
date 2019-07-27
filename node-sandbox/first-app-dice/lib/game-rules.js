@@ -1,3 +1,9 @@
+/**
+ * Author: raviupadhyay.bkn@gmail.com
+ * GAME RULE ENGINE LIBRARY - V-0.0.1
+ * Let us know some game rules
+ */
+
 const gameRules = {};
 const gameConfig = {
     winnerTarget : 36,

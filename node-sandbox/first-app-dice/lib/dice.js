@@ -1,3 +1,8 @@
+/**
+ * Author: raviupadhyay.bkn@gmail.com
+ * DICE LIBRARY - V-0.0.1
+ * Throws the dice and have some functions on outcome of the dice
+ */
 const dice = {};
 const config = {
     upperLimit : 6,

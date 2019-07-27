@@ -1,3 +1,12 @@
+/**
+ * Author: raviupadhyay.bkn@gmail.com
+ * DICE THROWING GAME - V-0.0.1
+ * 1. There are 4 players
+ * 2. Each will throw the dice
+ * 3. Initially he needs a special occurance to start with (1, 6)
+ * 4. If he gets (6) a bonus chance/turn will be awarded but streak cannot be more than 3.
+ * 5. One have to score 36 points to win the game. player to score 36 first will win the game.
+ */
 const dice =  require('./lib/dice');
 const gameRules = require('./lib/game-rules');
 
