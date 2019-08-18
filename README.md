@@ -8,6 +8,11 @@ ___
 - [About the journey](#journey)
 - [The chrome v8 javascript engine](#chrome-v8)
 - [The Node.js](#node-js)
+- [Common node conventions](#node-conventions)
+- [Node.js vs Browser](#node-vs-browser)
+- [Node how to do](#node-how-to-do)
+- [Node sand box](./node-sandbox)
+    - [First-app-dice](./node-sandbox/first-app-dice)
 - [Resources Over Web](#resources)
 - [To do list](#to-do)
 
@@ -65,6 +70,47 @@ ___
     3. If something is asynchronous (sub-task), it put that task/sub-task into its todo list
     4. Then picks another available task
 - 
+
+---
+
+## Common node conventions<a name="node-conventions"></a>
+
+- ### Package.json
+    - It is primary artefact of npm.
+    - It contains some simple information about the project such as name, version, description as well as complex scripts, dependencies.
+    - general
+
+- ### Package-lock.json
+    - Locks down the exact version of the node_modules have installed.
+
+- ### .Npmrc
+    - This artefact contains authorization related details for the npm cloud from where you generally doenload the dependencies.
+
+- ### node_modules
+    - A directory where all dependencies will be installed if you do `npm install`.
+    - Packages in node_modules can be referred directly when you use `require()` or `import()`.
+
+- ### Testing 
+    - Testing scripts are commonly held in a /test directory and are triggered by a "test runner" such as Mocha.
+
+- ### Error-handling
+    - Errback pattern is common pattern given by express, idea is avoid throwing error. Because node is single threaded application throwing error will result in halting of whole application.
+    - Instead, you can have error handling function, which can have `errorHandler(error, data)` where you can have error as well as other data to do some action.
+    - We should also avoid using globals. This way we'll avoid namespace collisions with any libraries we may be using.
+
+---
+
+### Node.js vs Browser/Window<a name="node-vs-browser"></a>
+
+- It is important to understand when we work on browser, console. We have access to several functions (i.e. window.open). You don't have access to such while working with node and vice-versa.
+- Node is one environment, The browser is many.
+- In Node, the source code is not visible to end user.
+
+---
+
+## Node how to do<a name="node-how-to-do"></a>
+
+- [Node Runtime Environment](./node-environment.md)
 
 ---
 
