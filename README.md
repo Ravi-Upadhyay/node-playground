@@ -14,6 +14,7 @@ ___
 - [Node API](#node-api)
 - [Node sand box](./node-sandbox)
     - [First-app-dice](./node-sandbox/first-app-dice)
+    - [Wrapper Around each file, IIFE, Default Arguments](./node-sandbox/wrapping-iife-file)
 - [Resources Over Web](#resources)
 - [To do list](#to-do)
 
@@ -120,6 +121,16 @@ ___
 
 - Node has replicated some APIs from the browser. But, they are not the same they are implemented in the same way. 
     - `console.log()`, `setTimeout()` are some examples. 
+    - It doesn't mean that everything will be working. 
+- Debug into the node
+    - `console.log()` and `console.dir({depth:0})`, this will get another argument which tells about the depth.
+    - TBD, Node debug
+- By default content of each file in node is wrapped inside IIFE and has five arguments
+    1. exports
+    2. require
+    3. module
+    4. __filename
+    5. __dirname
 
 ## Resources Over Web<a name="resources"></a>
 
