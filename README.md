@@ -11,6 +11,7 @@ ___
 - [Common node conventions](#node-conventions)
 - [Node.js vs Browser](#node-vs-browser)
 - [Node how to do](#node-how-to-do)
+- [Node API](#node-api)
 - [Node sand box](./node-sandbox)
     - [First-app-dice](./node-sandbox/first-app-dice)
 - [Resources Over Web](#resources)
@@ -111,12 +112,18 @@ ___
 ## Node how to do<a name="node-how-to-do"></a>
 
 - [Node Runtime Environment](./node-environment.md)
+- [Adding HTTPS Support](./adding-https-support.md)
 
 ---
 
+## Node API<a name="node-api"></a>
+
+- Node has replicated some APIs from the browser. But, they are not the same they are implemented in the same way. 
+    - `console.log()`, `setTimeout()` are some examples. 
+
 ## Resources Over Web<a name="resources"></a>
 
-1. <!-- list of the resources over web -->
+1. [Free Code Camp, Video About Node](https://www.youtube.com/watch?v=gG3pytAY2MY)
 
 ---
 
