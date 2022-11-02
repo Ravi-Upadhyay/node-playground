@@ -10,6 +10,7 @@ ___
 - [The Node.js](#node-js)
 - [Common node conventions](#node-conventions)
 - [Node.js vs Browser](#node-vs-browser)
+- [Installing Node - Developer Machine](#installing-node)
 - [Node how to do](#node-how-to-do)
 - [Node API](#node-api)
 - [Node sand box](./node-sandbox)
@@ -114,6 +115,27 @@ ___
 
 - [Node Runtime Environment](./node-environment.md)
 - [Adding HTTPS Support](./adding-https-support.md)
+
+---
+
+## Installing Node - Developer Machine <a name=""installing-node">
+
+- Directly from Node JS Website
+- Using NVM (Node Version Manager) Recommended as one can install multiple versions of node and switch between them
+
+### NVM (Node Version Manager): 
+
+1. Install Node Version Manager (NVM) using CURL - More details can be found [here](https://github.com/nvm-sh/nvm#installing-and-updating)
+2. That will create directory `~/.nvm` and put the binaries and also create an entry in `.bashrc`. That's why it is important to run `source ~/.bashrc`.
+
+```
+/* CURL command to install NVM */
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
+
+```
+```
+nvm ls //list all node versions to be installed
+```
 
 ---
 
