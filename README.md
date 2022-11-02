@@ -118,7 +118,7 @@ ___
 
 ---
 
-## Installing Node - Developer Machine <a name=""installing-node">
+## Installing Node - Developer Machine <a name=""installing-node"></a>
 
 - Directly from Node JS Website
 - Using NVM (Node Version Manager) Recommended as one can install multiple versions of node and switch between them
@@ -133,6 +133,7 @@ ___
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
 
 ```
+    
 ```
 nvm ls //list all node versions to be installed
 ```
